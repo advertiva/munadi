@@ -1,0 +1,57 @@
+Source: munadi
+Section: user/utilities
+Priority: optional
+Maintainer: A.Abbad <haqman@gmail.com>
+Build-Depends: debhelper (>= 5), libqt4-dev, libqtm-dev
+Standards-Version: 3.7.3
+Homepage: http://sf.net/projects/munadi/
+
+Package: munadi
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Maemo build of Munadi, the cross-platform Athan tool
+ This program calls for prayer times, 5 times a day, calculating
+ it using libitl from arabeyes.org, it is an open source, hosted
+ at sf.net/projects/munadi/, this is the Maemo 5 build
+XSBC-Maemo-Display-Name: Munadi
+XB-Maemo-Icon-26:
+ iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
+ AAAO6wAADxIBtXGxVgAACHtJREFUaIHVWWtQVMkVPv2Yi+MwojxmRl4D+OAxgCiwIsq6C7hGfESt
+ dU02VmJ0K0bXJKbywxg3L2tjJdGUf7KG2trdH5vdTW2sJZZmjVmzLOVbQeMDg0FKXoMiovjgIdzb
+ 3fkx3PFOc0dQrBpyqk7N3O6e2993zulzuntACAG6hrtyYjb/4OdX6+rqxB/f+aCjsGjlamP/WFQM
+ Bkl2uV76xurFqYqiQGlJYYwjOnIxjHEJINDSePPIvs8OX8UYw+kzF+7d7OjcHypgIxbZJemZxWt2
+ /aH8YX7Bsv2hDo+RaMBDUdGrxb/esafJ6/WKffsOPFiwcM3boQY4YgIAgDe+uf3fLS0twuv1itbW
+ VvHe+5/czcgofiHUIJ+k/jXgdruV+FiHg3Pu68AYZs3MmDRxYsTs0AX48BKwiAX4WD0mQUKFa8RC
+ jQ+P+vqRpmmgqgys1jDo7x8IFa4RS4AH9v7p48mVX52GJUvXHz3498ruRYvXSSPGngyFJwT0q9pH
+ FkqZdVxYfwgwPZVgAICsrNLFFkvS74QA4FwA17SigQEV+voehbW1tq/Ke2Hx9lADDSZICAFz567Y
+ s3Xr97YwxiExcTK0t9+B+HgXdHZ2gaZp8Om+Q19+8N7u0lCDNRMMANDX1/fV4cPH6pOT48FmGw/T
+ prnBZrNCSkoCtLa2d7Q23zgXaqDBBAMAnD9/+MDxU9V7Ozvv+lOonk4PHao6deTIJ1tDDTSY+NMo
+ JcojjTHQNA0QQgAAgBACJcwypnPp4yzEGXDGgHMe4AXwbTPGrAQUMmbwAMbYRyZUyEYofg9w7iPA
+ Br3AGNM3eWNaaEZGyRrOeSFjmk0PH8YYYIyBEAKdHZ2xaWnzd0yYOIGePX3wZ6EGLAuNirK//Mb6
+ V9dxIcBuH+8HjzEGTdPgrbfenMsYn1tR8c8zo50sKSlpXG+vjXZ0XOl+HuABAPCDrp6q+muNt53O
+ KEAI+cNIV6czGiglrL7++n+fdRKPZ15iorugrrt3YgUTSrkrLt+blVU653kQoBdrj/w5N3eR3WJR
+ dhQUzIjSF7Cud+7cYzt3lldUVu777rNOYo+IXJ+ZHSuam25c4YyLqOiItgfdvd8HgFOjJYABAM6d
+ +8fe6urLNcY1oGtFxRdtlZX8m0KIZ05IZ07deNvrvfVxbJzj6zNnpa29f+/h8bra1h+OFryfAAAA
+ pVSVw4cxBoQgIcRf2WgmEaJGPXHsb79BgJr6+9XukycP/OTu3Zr7o4dvqAOcP64BxjAabSpFCKEp
+ U+bNik9wbZo5Mz3NETMxoqR09WfeGx0f1teJz4Wo0p4LAX3vI6fSZyGAEMLTp7/8UqLb+Z21a7d4
+ smekpmZ6poRzzkFVVUhLS155vdG7rKbmyrXiklX/udnedbCvR/u0qanq0bMTYDzAA7oXmDby0A93
+ zXAUZHu2bdjw06KiolxPenrKOMYYqKrqV91ASe5YGhcbk66qanr7rTsrzlbXbiuct6zmhvfO7qam
+ ExeemgAHCChg+kQjkeTkQnd2dtrO7VveKFqx/JUESokfMAy+lxDi/zR6mnMOjphJ+GuvzEkdGBhI
+ vVTbUFY0f8XZm223f9vQcLxqxASEf9ESPxFN04Dx4CHqcs2wZWdn7tq48VtLV60qi1cUBYQQfkvr
+ YamDppQOCVV5XJZnyqTUaQkL6+tbCmYXLjna3nZ/S3PzsevDEtAtpWlaQB0QXABCCAlpMeTllS1Y
+ tmzh7zdtWpMTEWEHQoj/PsmoRosLIYJ6wdhGKYVp0xIi3G7n0uqauuzM7OJ3ai9V7noiAURwhLyA
+ McYQGRlhtdkyHQBwSx+bm1u25LXXysqXL18Qpy90zjkghEAI4SdjZm0dqBkJ+TBFCIG83DS30znp
+ l9k5pZGXLvxrm0zAd6j3lGzOyEjO0TRtSB3Iy/c4cnKmlqPBUw5CCKenp/yqrGx+nHGywAsxn+V1
+ lZ/1tie1G/viYmNs6WmJ6xwJc6YOIeBweMKTU5w/drtddrkKM8ZAUSzw+utlizye4tUAAHZ72tT8
+ /KzpZhaTSehKKR0ClBAClFI/UDMyxt+lTk90RE8a/+0hBHp7edLk2OjJevzraiSRkOAKs9ttcwAA
+ KAWFYEz1cTIRYzjJIM2sHQy87A2LhQIBsJqGEGccGQHLnjCm064u59Wz1Zcb9HbZC3JWMYIcibWD
+ hVZjU3tX98P+j8wJSAvJjIwuQlRp9fWNe06eON+le8EYOvJ3s5AxCykjcLm/p6dfu3ipoaKx8fjF
+ IVlogm3cL7hJFdYrsZ5We3p6i198ceX7GCOwWcdDeflf7jY0NIevW7/KwhgDhFBAJvLf30upVP+u
+ t5ulVaM3L9c2iP0HjnY7HZFq/uyyvYxzGFC12+3evt2dnSceos2bfyTsdhtYrePAYrH4VVEUUBQl
+ oE1WY7+iKEPCRP8OAAHbCaP6bsMDnwcGBoL2q6oKPT19cODzU+9ePP/FBmq1KoAQBOR+jHHADYWZ
+ Z/QxxuMnpdTUE7IX5LUjzz1c8bNaw0BVtVgAACr/2OjaYC+VtxyyGjOR/hmMhLH9aYpfxITwPFMC
+ wYDJbWZnB10HC14ACfn9ZnGvgzfbVMreiI6a0A8AQGUgwaxqvPAy84hxrAzeuMXQLWlmaeO7h/MG
+ GjQUNUuhZgRkawQbJwMYbp80nDeC7Zf0+1tq3H2aHWiMfWZj5HF6iOjWl8MpGNlg3gi6dnQCesEa
+ LjTktWE2Th4j1wTjFiNY7AerCXI7IoMhVHP22peYYCDIV/UQQUCQ7xMTAhgRIAQDQhgoxYARBoQx
+ EEp8YDABQn3jMEK+3xMCGBPAGAEhCAAwIAQACAHCBDAg4CB8hyghQHAOnHHgggMXwndLLgRwzoBz
+ 4VPBQDDuG88YtLbdtgEM/sX0/yz/Awkb+cj3hsmCAAAAAElFTkSuQmCC

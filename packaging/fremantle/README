@@ -1,0 +1,6 @@
+To build:
+Create a folder with the following name: munadi-version, e.g. munadi-0.1.0
+Copy all source into it, and copy the debian folder into it too.
+Invoke dpkg-buildpackage, e.g. /opt/NokiaQtSDK/Maemo/4.6.2/bin/mad dpkg-buildpackage -rfakeroot -sa -S
+Upload .dsc, .changes and .tar.gz files to maemo.org
+or invode /opt/NokiaQtSDK/Maemo/4.6.2/bin/mad dpkg-buildpackage to build a local .deb file. 

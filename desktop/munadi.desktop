@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Munadi
+Icon=munadi
+Type=Application
+Categories=Utility
+Exec=/opt/munadi/munadi
+X-Osso-Service=org.indt.munadi

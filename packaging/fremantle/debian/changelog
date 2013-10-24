@@ -1,0 +1,16 @@
+munadi (0.2.0) unstable; urgency=low
+
+  * MohamedAG's patch to switch to portrait mode was added.
+  * Ability to choose the calculation method.
+  * Ability to switch between standard and Hanafi Asr timing.
+  * Replaced the hadith section with a compass that displays the qibla direction with respect to north.
+  * Ability to enable/disable individual prayer Athans.
+  * Ability to adjust prayer times by +/- minutes.
+
+ -- A.Abbad <haqman@gmail.com>  Tue, 8 Feb 2011 09:10:00 +0000
+
+munadi (0.1.0) unstable; urgency=low
+
+  * Initial Release.
+
+ -- A.Abbad <haqman@gmail.com>  Wed, 22 Dec 2010 16:46:18 +0000

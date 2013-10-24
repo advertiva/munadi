@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi" xmlns:util="http://schemas.microsoft.com/wix/UtilExtension">
+    <Product Id="*" Name="Munadi" Language="1033" Version="$(env.version)" Manufacturer="Munadi.org" UpgradeCode="5BF67E2F-7016-4269-BCC8-D0BB2FE8DE4E">
+        <Package Description="This is an install package for Munadi" Comments="Munadi - Simple Athan Program" InstallerVersion="200" Compressed="yes" />
+        <Media Id="1" Cabinet="simple.cab" EmbedCab="yes" CompressionLevel="high" />
+		
+		<Upgrade Id="5BF67E2F-7016-4269-BCC8-D0BB2FE8DE4E">
+			<UpgradeVersion Minimum="$(env.version)" IncludeMinimum="no" OnlyDetect="yes" Property="NEWERVERSIONDETECTED" />
+			<UpgradeVersion Minimum="0.0.0.0" Maximum="$(env.version)" IncludeMinimum="yes" IncludeMaximum="yes" Property="OLDERVERSIONBEINGUPGRADED" />
+		</Upgrade>
+
+		<InstallExecuteSequence>
+			<RemoveExistingProducts After="InstallInitialize" />
+			<Custom Action="NewerVersion" After="FindRelatedProducts">NEWERVERSIONDETECTED</Custom>
+		</InstallExecuteSequence>
+
+		<CustomAction Id="NewerVersion" Error="A later version of [ProductName] is already installed." />
+		
+        <Directory Id="TARGETDIR" Name="SourceDir">
+            <Directory Id="ProgramFilesFolder" Name="PFiles">
+				<Directory Id="dir3C2A96217259258FE947C0A6B11CA4BC" Name="Munadi">
+					<Directory Id="dir83A2665A6E58A48716B14C6D532C3845" Name="platforms">
+						<Component Id="cmp54CFEE189BCCCC5793A3A4207A3388C2" Feature="F" Guid="{1674534E-DF0F-4A54-8CA6-7332AFF5B448}">
+							<File Id="fil27D5A5903A99D662A95A22172488D956" KeyPath="yes" Source="Munadi\platforms\qwindows.dll" />
+						</Component>
+						<Component Id="cmp2781BBB349BCAED6C9C1D0689D359DF1" Feature="F" Guid="{626CD943-F6DC-4DEC-8BF0-18C0AF3E07A3}">
+							<File Id="fil5AB997D08CF3E6F030F2C4592D86030B" KeyPath="yes" Source="Munadi\platforms\qminimal.dll" />
+						</Component>
+					</Directory>
+					<Component Id="cmp8071C563303DF05E596617F7B0B99C1A" Feature="F" Guid="{C425DAFF-6B10-4251-A9B9-AFEDEE4E55E0}">
+						<File Id="fil30CFE3365903AF49F14BFC67C3A686FA" KeyPath="yes" Source="Munadi\D3DCompiler_43.dll" />
+					</Component>
+					<Component Id="cmp501B278A286CCBB0DFA11E3C930C9544" Feature="F" Guid="{F873F540-9A4B-4152-B37B-75F7D4C04B1E}">
+						<File Id="fil02F75CC710EE5D41B117EE7F29805188" KeyPath="yes" Source="Munadi\libsndfile-1.dll" />
+					</Component>
+					<Component Id="cmpC8319FEDA4E8758F9C5F49A630F2CF38" Feature="F" Guid="{34B9DFCA-32A8-4357-BCAE-F4EDA5F3A687}">
+						<File Id="fil0E474B0EE5478B6A39E56F9D8B1A29E6" KeyPath="yes" Source="Munadi\openal32.dll" />
+					</Component>
+					<Component Id="cmpEB1AC95E29001EFCD8385FB1A91490AB" Feature="F" Guid="{7550B56B-352E-4077-AF7E-7FD151411567}">
+						<File Id="filBEDEACD5C16DF2041AA3C14E40471AD9" KeyPath="yes" Source="Munadi\icudt49.dll" />
+					</Component>
+					<Component Id="cmp7491B3FE8297D18A58C09749FF49356C" Feature="F" Guid="{9F0AA7F5-B529-451E-9547-3DF84D8E74C2}">
+						<File Id="filA827F6F58F2B803DCE16B8C104CDD9CD" KeyPath="yes" Source="Munadi\icuin49.dll" />
+					</Component>
+					<Component Id="cmpFB1FF9DE231D92C1D97F654E84AAD055" Feature="F" Guid="{71800885-E977-426C-99E6-C03EF6FAD56F}">
+						<File Id="fil48FFFFBDB6126C720C0E00BD712F1FF9" KeyPath="yes" Source="Munadi\icuuc49.dll" />
+					</Component>
+					<Component Id="cmp671C3C4701DEBB4C469489D672C6F41B" Feature="F" Guid="{082959F7-334D-4655-A8B8-543916484DE9}">
+						<File Id="filEFB08AC2E9204437EBF63A246E2A76EF" KeyPath="yes" Source="Munadi\libEGL.dll" />
+					</Component>
+					<Component Id="cmpCCB4DA7D3469B6FA0727CFC94FC69E0C" Feature="F" Guid="{27D1A7D3-9F11-4E81-BBD9-72C20EF158E7}">
+						<File Id="fil2C9079AC0AFB86F506F36684D63D5768" KeyPath="yes" Source="Munadi\libgcc_s_sjlj-1.dll" />
+					</Component>
+					<Component Id="cmp0382F13E2A949C230784DE280CAF6C57" Feature="F" Guid="{859BA25E-DC8F-493C-BB50-AFC7531AF5C7}">
+						<File Id="filF0BC18365CD858E15702D43D026FAFFF" KeyPath="yes" Source="Munadi\libGLESv2.dll" />
+					</Component>
+					<Component Id="cmp26649F0ADF642E6E87BB0580F9A935AC" Feature="F" Guid="{41DAACF8-5C73-429B-A467-F21995834FFC}">
+						<File Id="fil259422EF479FEC14E650FE5D5D5CC04D" KeyPath="yes" Source="Munadi\libstdc++-6.dll" />
+					</Component>
+					<Component Id="cmp8F883420F2DC545DFF9A3542BF457B9D" Feature="F" Guid="{95A9F326-B941-44C5-A525-FDD748BECF7F}">
+						<File Id="fil390C0189D9A7E2D978F79F62B16BDFBF" KeyPath="yes" Source="Munadi\libwinpthread-1.dll" />
+					</Component>
+					<Component Id="cmp613029085635B6F0E2FF14DA1B92965F" Feature="F" Guid="{039B6F02-BE2E-4504-8F60-EBB7E02A158D}">
+						<File Id="fil41803738614FCAD624F7D9854668C7C8" KeyPath="yes" Source="Munadi\munadi.exe">
+							<Shortcut Id="desktopShortcut" Directory="DesktopFolder" Name="Munadi" WorkingDirectory="INSTALLDIR" Advertise="yes" Icon="DesktopIcon.ico" IconIndex="0" />
+                            <Shortcut Id="ExeShortcut" Directory="ProgramMenuDir" Name="Munadi" Advertise="yes" Icon="StartMenuIcon.ico" IconIndex="0" />
+						</File>
+					</Component>
+					<Component Id="cmpF9F8D7B1F23547D6C85E1C1B7285EAB5" Feature="F" Guid="{FEA075A3-EC36-40AE-B8BE-D522DE123CE0}">
+						<File Id="filE2B501EE7E4802329C8AAFC2B9DB9738" KeyPath="yes" Source="Munadi\Qt5Core.dll" />
+					</Component>
+					<Component Id="cmp5F5CC74F1112830179E929E0A0BB7AFF" Feature="F" Guid="{038F39EF-F837-4111-A625-775C125A7F79}">
+						<File Id="fil62A21162ACF63BB732554DF7AF9C699F" KeyPath="yes" Source="Munadi\Qt5Gui.dll" />
+					</Component>
+					<Component Id="cmp836C94A9579FF97110E867AC7E7379EE" Feature="F" Guid="{390334CF-9808-4CFA-8D6C-370F3DE816EC}">
+						<File Id="fil6803024DFFB54624C643F01F29582EFB" KeyPath="yes" Source="Munadi\Qt5Network.dll" />
+					</Component>
+					<Component Id="cmp436F86366873677BF4BB57ABFCE03D1B" Feature="F" Guid="{510A252F-0856-4572-AC6C-694E93C328F8}">
+						<File Id="fil96886232D5879D574EB1A404788E2437" KeyPath="yes" Source="Munadi\Qt5Widgets.dll" />
+					</Component>
+					<Directory Id="dirFE96FC23E9827AAF736F4FF026AF006F" Name="audio">
+						<Component Id="cmp38F0491D0B26B4C36B20A0CFA0CA6FA8" Feature="F" Guid="{3EEF7316-FC83-487D-BDB5-F8CE84F61CD7}">
+							<File Id="filFAC1A6CB178378A9A7E242AC80470FD1" KeyPath="yes" Source="Munadi\audio\athan.ogg" />
+						</Component>
+					</Directory>
+					<Directory Id="dirC88F66719DF13D74F5E262CE0656D01B" Name="images">
+						<Component Id="cmpBBFCFDD36E93DBE203415D9C4AB66C59" Feature="F" Guid="{DD8583F9-9255-4501-B52C-7928E165D11F}">
+							<File Id="fil866DA2A7AE62866D09D1DD118C84BAFC" KeyPath="yes" Source="Munadi\images\app.ico" />
+						</Component>
+					</Directory>
+				</Directory>
+			</Directory>
+            <Directory Id="DesktopFolder" />
+            <Directory Id="ProgramMenuFolder">
+                <Directory Id="ProgramMenuDir" Name="Munadi">
+                    <Component Id="StartMenuShortcuts" Feature="F" Guid="BC9CE46F-9CCD-4738-826C-D907BB61D225">
+                        <RemoveFolder Id="ProgramMenuDir" On="uninstall" />
+                        <RegistryValue Root="HKCU" Key="Software\[Manufacturer]\[ProductName]" Type="string" Value="" />
+                        <Shortcut Id="UninstallProduct" Name="Uninstall" Description="Uninstalls the application" Target="[System64Folder]msiexec.exe" Arguments="/x [ProductCode]" />
+                        <util:InternetShortcut Id="WebsiteShortcut" Name="Project page" Target="http://sourceforge.net/projects/munadi/" />
+                    </Component>
+                </Directory>
+            </Directory>
+        </Directory>
+		
+        <Feature Id="F" Title="Main Feature" Level="1"/>
+        <Icon Id="DesktopIcon.ico" SourceFile="Munadi\images\app.ico" />
+        <Icon Id="StartMenuIcon.ico" SourceFile="Munadi\images\app.ico" />
+		
+    </Product>
+</Wix>

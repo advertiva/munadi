@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file alias="play">images/play.png</file>
+        <file alias="stop">images/stop.png</file>
+        <file alias="exit">images/exit.png</file>
+        <file alias="app">images/app.png</file>
+    </qresource>
+    <qresource prefix="/data">
+        <file alias="cities.tsv">data/cities.tsv</file>
+        <file alias="countries.tsv">data/countries.tsv</file>
+    </qresource>
+    <qresource prefix="/images">
+        <file>images/bg.png</file>
+    </qresource>
+</RCC>

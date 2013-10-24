@@ -1,0 +1,4 @@
+# Service description file
+[D-BUS Service]
+Name=org.indt.munadi
+Exec=/opt/munadi/munadi
