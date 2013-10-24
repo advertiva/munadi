@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>Tuple.qml</file>
+        <file>Table.qml</file>
+        <file>Extras.qml</file>
+        <file>Prayer.qml</file>
+    </qresource>
+</RCC>
