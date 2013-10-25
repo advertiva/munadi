@@ -49,11 +49,7 @@ background-image: url(:/images/images/bg.png);
     </property>
     <property name="font">
      <font>
-      <family>Segoe Print</family>
-      <pointsize>16</pointsize>
-      <weight>50</weight>
-      <bold>false</bold>
-      <stylestrategy>PreferAntialias</stylestrategy>
+      <pointsize>20</pointsize>
      </font>
     </property>
     <property name="frameShape">
@@ -80,11 +76,7 @@ background-image: url(:/images/images/bg.png);
     </property>
     <property name="font">
      <font>
-      <family>Segoe Print</family>
-      <pointsize>16</pointsize>
-      <weight>50</weight>
-      <bold>false</bold>
-      <stylestrategy>PreferAntialias</stylestrategy>
+      <pointsize>20</pointsize>
      </font>
     </property>
     <property name="frameShape">
@@ -111,11 +103,7 @@ background-image: url(:/images/images/bg.png);
     </property>
     <property name="font">
      <font>
-      <family>Segoe Print</family>
-      <pointsize>16</pointsize>
-      <weight>50</weight>
-      <bold>false</bold>
-      <stylestrategy>PreferAntialias</stylestrategy>
+      <pointsize>20</pointsize>
      </font>
     </property>
     <property name="frameShape">
@@ -142,11 +130,7 @@ background-image: url(:/images/images/bg.png);
     </property>
     <property name="font">
      <font>
-      <family>Segoe Print</family>
-      <pointsize>16</pointsize>
-      <weight>50</weight>
-      <bold>false</bold>
-      <stylestrategy>PreferAntialias</stylestrategy>
+      <pointsize>20</pointsize>
      </font>
     </property>
     <property name="frameShape">
@@ -173,11 +157,7 @@ background-image: url(:/images/images/bg.png);
     </property>
     <property name="font">
      <font>
-      <family>Segoe Print</family>
-      <pointsize>16</pointsize>
-      <weight>50</weight>
-      <bold>false</bold>
-      <stylestrategy>PreferAntialias</stylestrategy>
+      <pointsize>20</pointsize>
      </font>
     </property>
     <property name="frameShape">
@@ -204,11 +184,7 @@ background-image: url(:/images/images/bg.png);
     </property>
     <property name="font">
      <font>
-      <family>Segoe Print</family>
-      <pointsize>16</pointsize>
-      <weight>50</weight>
-      <bold>false</bold>
-      <stylestrategy>PreferAntialias</stylestrategy>
+      <pointsize>20</pointsize>
      </font>
     </property>
     <property name="frameShape">
@@ -235,11 +211,7 @@ background-image: url(:/images/images/bg.png);
     </property>
     <property name="font">
      <font>
-      <family>Segoe Print</family>
-      <pointsize>16</pointsize>
-      <weight>50</weight>
-      <bold>false</bold>
-      <stylestrategy>PreferAntialias</stylestrategy>
+      <pointsize>20</pointsize>
      </font>
     </property>
     <property name="frameShape">
@@ -266,11 +238,7 @@ background-image: url(:/images/images/bg.png);
     </property>
     <property name="font">
      <font>
-      <family>Segoe Print</family>
-      <pointsize>16</pointsize>
-      <weight>50</weight>
-      <bold>false</bold>
-      <stylestrategy>PreferAntialias</stylestrategy>
+      <pointsize>20</pointsize>
      </font>
     </property>
     <property name="frameShape">
@@ -297,11 +265,7 @@ background-image: url(:/images/images/bg.png);
     </property>
     <property name="font">
      <font>
-      <family>Segoe Print</family>
-      <pointsize>16</pointsize>
-      <weight>50</weight>
-      <bold>false</bold>
-      <stylestrategy>PreferAntialias</stylestrategy>
+      <pointsize>20</pointsize>
      </font>
     </property>
     <property name="styleSheet">
@@ -331,11 +295,7 @@ background-image: url(:/images/images/bg.png);
     </property>
     <property name="font">
      <font>
-      <family>Segoe Print</family>
-      <pointsize>16</pointsize>
-      <weight>50</weight>
-      <bold>false</bold>
-      <stylestrategy>PreferAntialias</stylestrategy>
+      <pointsize>20</pointsize>
      </font>
     </property>
     <property name="frameShape">
@@ -362,11 +322,7 @@ background-image: url(:/images/images/bg.png);
     </property>
     <property name="font">
      <font>
-      <family>Segoe Print</family>
-      <pointsize>16</pointsize>
-      <weight>50</weight>
-      <bold>false</bold>
-      <stylestrategy>PreferAntialias</stylestrategy>
+      <pointsize>20</pointsize>
      </font>
     </property>
     <property name="frameShape">
@@ -393,11 +349,7 @@ background-image: url(:/images/images/bg.png);
     </property>
     <property name="font">
      <font>
-      <family>Segoe Print</family>
-      <pointsize>16</pointsize>
-      <weight>50</weight>
-      <bold>false</bold>
-      <stylestrategy>PreferAntialias</stylestrategy>
+      <pointsize>20</pointsize>
      </font>
     </property>
     <property name="frameShape">
@@ -424,14 +376,7 @@ background-image: url(:/images/images/bg.png);
     </property>
     <property name="font">
      <font>
-      <family>Segoe Print</family>
-      <pointsize>12</pointsize>
-      <weight>50</weight>
-      <italic>true</italic>
-      <bold>false</bold>
-      <underline>false</underline>
-      <stylestrategy>PreferAntialias</stylestrategy>
-      <kerning>true</kerning>
+      <pointsize>16</pointsize>
      </font>
     </property>
     <property name="frameShape">
@@ -462,7 +407,8 @@ background-image: url(:/images/images/bg.png);
     <property name="font">
      <font>
       <family>Segoe Print</family>
-      <pointsize>12</pointsize>
+      <pointsize>14</pointsize>
+      <italic>true</italic>
       <stylestrategy>PreferAntialias</stylestrategy>
      </font>
     </property>
@@ -497,8 +443,8 @@ background-image: url(:/images/images/bg.png);
     </property>
     <property name="font">
      <font>
-      <family>Segoe Print</family>
-      <pointsize>12</pointsize>
+      <pointsize>20</pointsize>
+      <italic>true</italic>
      </font>
     </property>
     <property name="text">
@@ -525,8 +471,7 @@ background-image: url(:/images/images/bg.png);
     </property>
     <property name="font">
      <font>
-      <family>Segoe Print</family>
-      <pointsize>10</pointsize>
+      <pointsize>13</pointsize>
      </font>
     </property>
     <property name="text">
@@ -549,7 +494,7 @@ background-image: url(:/images/images/bg.png);
      <x>0</x>
      <y>0</y>
      <width>640</width>
-     <height>20</height>
+     <height>22</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuOptions">
@@ -572,7 +517,7 @@ background-image: url(:/images/images/bg.png);
    </widget>
    <widget class="QMenu" name="menuFile">
     <property name="title">
-     <string>Munadi</string>
+     <string>File</string>
     </property>
     <addaction name="actionPlay_Stop_Athan"/>
     <addaction name="actionE_xit"/>
