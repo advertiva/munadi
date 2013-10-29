@@ -82,7 +82,7 @@ public:
 #ifdef Q_OS_WIN
         athanPath = QApplication::applicationDirPath() + "/audio/athan.ogg";
 #else
-        athanPath = QApplication::applicationDirPath() + "/audio/athan.ogg";
+        athanPath = QApplication::applicationDirPath() + "/audio/athan.mp3";
 #endif
 
         /*if (qSettings.value("athan/normalPath").toString() == "")

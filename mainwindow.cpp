@@ -50,6 +50,10 @@ MainWindow::MainWindow(QWidget *parent)
     }
 #endif
 
+#ifdef Q_OS_MAC
+    ui->actionStart_with_PC->setVisible(false);
+#endif
+
     connect(munadi, SIGNAL(stateChanged()), this, SLOT(updateDisplay()));
     updateDisplay();
 
@@ -60,8 +64,10 @@ MainWindow::MainWindow(QWidget *parent)
     tray->setContextMenu(trayMenu);
     tray->show();
 
+#ifdef Q_OS_WIN
     connect(tray, SIGNAL(activated(QSystemTrayIcon::ActivationReason)),
             this, SLOT(iconActivated(QSystemTrayIcon::ActivationReason)));
+#endif
 }
 
 MainWindow::~MainWindow()
@@ -228,14 +234,20 @@ void MainWindow::on_actionCheck_for_updates_triggered(bool checked)
 
 void MainWindow::on_actionCompact_mode_triggered(bool checked)
 {
+#ifdef Q_OS_MAC
+    static int height = 480;
+#else
+    static int height = 500;
+#endif
+
     if(checked)
     {
-        setFixedSize(375, 500);
+        setFixedSize(375, height);
         munadi->settings->compactMode = true;
     }
     else
     {
-        setFixedSize(640, 500);
+        setFixedSize(640, height);
         munadi->settings->compactMode = false;
     }
 }

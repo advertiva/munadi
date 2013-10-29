@@ -78,7 +78,7 @@ FORMS += mainwindow.ui
 
 }
 
-TARGET = munadi
+TARGET = Munadi
 TEMPLATE = app
 
 SOURCES +=  main.cpp \

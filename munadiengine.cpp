@@ -10,6 +10,26 @@ MunadiEngine::MunadiEngine(QObject * parent)
     , settings(new Settings())
     , timer(new QTimer(this))
 {
+    QString athanFile;
+    athanFile = settings->athanPath;
+    dout << "Athan file: " << athanFile;
+
+#if defined(Q_OS_WIN)
+    athanObject = new sf::Music();
+    if(!athanObject->OpenFromFile(athanFile.toStdString()))
+    {
+        QMessageBox::critical(0, tr("Athan File"), tr("Unable to play Athan file."));
+    }
+    //athanObject->SetVolume(1.0f);
+#else
+    athanObject = new QMediaPlayer();
+    athanObject->setMedia(QUrl::fromLocalFile((athanFile)));
+    athanObject->setVolume(100);
+#endif
+
+    if(athanObject == 0)
+        exit(1);
+
     calculatePrayer();
     getNextPrayer();
 
@@ -20,6 +40,7 @@ MunadiEngine::MunadiEngine(QObject * parent)
 }
 MunadiEngine::~MunadiEngine()
 {
+    stopAthan();
     if(athanObject) delete athanObject;
     if(settings)    delete settings;
 }
@@ -95,30 +116,7 @@ bool MunadiEngine::isAthanPlaying()
 }
 
 void MunadiEngine::playAthan()
-{ 
-    if(athanObject == 0)
-    {
-        QString athanFile;
-        athanFile = settings->athanPath;
-        //athanFile = QApplication::applicationDirPath();    //older code with athan file hardcoded
-        //athanFile += "/audio/athan.wav";
-        dout << "Athan file: " << athanFile;
-
-#if defined(Q_OS_WIN)
-        athanObject = new sf::Music();
-        if(!athanObject->OpenFromFile(athanFile.toStdString()))
-        {
-            QMessageBox::critical(0, tr("Athan File"), tr("Unable to play Athan file."));
-        }
-        //athanObject->SetVolume(1.0f);
-#else
-        athanObject = new QMediaPlayer();
-        athanObject->setMedia(QUrl::fromLocalFile((athanFile)));
-        athanObject->setVolume(100);
-#endif
-
-    }
-
+{
     if(isAthanPlaying())
     {
         dout << "Athan playing, will return.";
